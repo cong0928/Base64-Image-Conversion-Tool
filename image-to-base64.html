@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片转Base64</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>图片转Base64</h1>
+            <nav>
+                <a href="index.html">切换到Base64转图片</a>
+            </nav>
+        </div>
+        <div class="upload-section">
+            <label for="image-upload">上传图片：</label>
+            <input type="file" id="image-upload" accept="image/*">
+            <div id="upload-preview"></div>
+            <label for="base64-output">转换结果：</label>
+            <textarea id="base64-output" placeholder="Base64编码将显示在这里..." readonly></textarea>
+            <div class="button-group">
+                <button id="copy-btn" class="small-btn">复制Base64</button>
+            </div>
+            <p id="copy-message" class="copy-message"></p>
+            <p id="error-message" class="error"></p>
+        </div>
+    </div>
+    <script src="image-to-base64.js"></script>
+</body>
+</html>

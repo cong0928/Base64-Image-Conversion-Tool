@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64转图片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Base64转图片</h1>
+            <nav>
+                <a href="image-to-base64.html">切换到图片转Base64</a>
+            </nav>
+        </div>
+        <div class="input-section">
+            <label for="base64-input">Base64文本：</label>
+            <textarea id="base64-input" placeholder="请粘贴Base64图片编码..."></textarea>
+            <button id="convert-btn">转换为图片</button>
+        </div>
+        <div class="output-section">
+            <h2>预览图片：</h2>
+            <div id="image-container">
+                <img id="preview-image" alt="预览图片">
+                <p id="error-message" class="error"></p>
+            </div>
+        </div>
+    </div>
+    <script src="base64-to-image.js"></script>
+</body>
+</html>
+
